@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Personal Details Form</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
@@ -14,41 +14,77 @@
     }
 
     body {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #667eea, #764ba2);
+      background: linear-gradient(135deg, #2a7de1, #14b8a6);
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 2rem;
+      height: 100vh;
+      padding: 20px;
     }
 
     .container {
       background: white;
-      max-width: 800px;
       width: 100%;
-      padding: 2rem;
+      max-width: 900px;
       border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      overflow: hidden;
     }
 
     h1 {
-      text-align: center;
-      margin-bottom: 1.5rem;
+      font-size: 2rem;
       color: #333;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 600;
     }
 
     iframe {
       width: 100%;
-      height: 1257px;
+      height: 1000px;
       border: none;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .footer a {
+      color: #14b8a6;
+      text-decoration: none;
+      font-weight: 600;
     }
 
     @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      
+      iframe {
+        height: 1200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
       .container {
         padding: 1rem;
       }
+      
       iframe {
-        height: 1400px;
+        height: 1300px;
+      }
+
+      h1 {
+        font-size: 1.2rem;
       }
     }
   </style>
@@ -60,6 +96,9 @@
       frameborder="0" marginheight="0" marginwidth="0">
       Loading…
     </iframe>
+    <div class="footer">
+      <p>Powered by <a href="https://www.google.com/forms/about/">Google Forms</a></p>
+    </div>
   </div>
 </body>
 </html>
